@@ -9,7 +9,6 @@ class Menu extends Component {
                 <Head>
                     <link href="/static/menu.css" rel="stylesheet" />
                 </Head>
-
                 <ul>
                     <li>
                         <Link href='/'>
