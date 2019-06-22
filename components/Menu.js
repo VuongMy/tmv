@@ -9,7 +9,6 @@ class Menu extends Component {
                 <Head>
                     <link href="/static/menu.css" rel="stylesheet" />
                 </Head>
-
                 <ul>
                     <li>
                         <Link href='/'>
@@ -17,7 +16,7 @@ class Menu extends Component {
                         </Link>
                     </li>
                     <li>
-                        <Link href='/introduce'>
+                        <Link href='/dich-vu-tham-mi'>
                             <a className="chose">Gioi thieu</a>
                         </Link>
                     </li>
