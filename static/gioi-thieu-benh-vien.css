@@ -1,0 +1,59 @@
+.phong-kham, .van-phong, .bac-si{
+    width: 80%;
+    display: inline-block;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.desc{
+    width: 40%;
+    padding-right:5%;
+    padding-left: 5%;
+}
+.slide{
+    float: right;
+    width: 50%;
+}
+
+
+.desc-vp{    
+    width: 40%;
+    float: right;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+}
+.slide-vp{
+    width: 50%;
+}
+h2{
+    margin-top: 0%;
+}
+
+.bs{
+    width: 80%;
+}
+
+.table{
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+.up-down{
+    float: right;
+
+}
+
+.line{
+    width: 100%;
+}
+td {
+    width: 33%;
+    height: auto;
+    vertical-align: top;
+}
+
+tr {
+    height: auto;
+}
