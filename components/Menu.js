@@ -16,7 +16,7 @@ class Menu extends Component {
                         </Link>
                     </li>
                     <li>
-                        <Link href='/dich-vu-tham-mi'>
+                        <Link href='/gioi-thieu-benh-vien'>
                             <a className="chose">Gioi thieu</a>
                         </Link>
                     </li>
