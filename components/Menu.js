@@ -9,7 +9,7 @@ class Menu extends Component {
                 <Head>
                     <link href="/static/menu.css" rel="stylesheet" />
                 </Head>
-                <ul>
+                {/* <ul>
                     <li>
                         <Link href='/'>
                             <a className="chose">Trang chu</a>
@@ -35,12 +35,54 @@ class Menu extends Component {
                             <a className="chose">Lien he</a>
                         </Link>
                     </li>
-                    {/* <a href="#home" className="active">Home</a></li> */}
-                    {/* <li><a href="#news">Service</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">Register</a></li>
-                    <li><a href="#about">Introduce</a></li> */}
-                </ul>
+                </ul> */}
+                <div className="row header">
+                    <div className="row col-4">
+                        <img className="logo" src="../static/introduce/header/logo.png"></img>
+                        <div className="col-6">
+                            <img className="slider-left" src="../static/introduce/header/slide 2.png"></img>
+                        </div>
+                        <div className="col-6"></div>
+                    </div>
+                    <div className="col-8">
+                        <div className="row">
+                            <div className="col-1"></div>
+                            <div className="col-11 menu">
+                            <ul>
+                                <li>
+                                    {/* <img src="../static/introduce/header/menu nomal.png"></img> */}
+                                    <Link href='/'>
+                                        <a className=""><b>HOME</b></a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/gioi-thieu-benh-vien'>
+                                        <a className=""><b>GIỚI THIỆU</b></a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/service'>
+                                        <a className=""><b>DỊCH VỤ THẨM MỸ</b></a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/register'>
+                                        <a className=""><b>QUY TRÌNH ĐĂNG KÝ</b></a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/contact'>
+                                        <a className=""><b>LIÊN HỆ</b></a>
+                                    </Link>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <img className="slider-right" src="../static/introduce/header/slide 1.png"></img>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
