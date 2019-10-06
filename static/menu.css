@@ -65,3 +65,70 @@ li a:hover {
 .slider-right {
   width: 100%;
 }
+
+/* -------------------------------------------Lien He CSS------------------------------ */
+.main-contact{
+  background-image: url("/static/contact/images/left-bg.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 66.66%;
+}
+.form-lien-he{
+  background-image: url("/static/contact/images/form-chung.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 33.33%;
+}
+#contact{
+  width: 80%;
+  margin-left:auto; 
+  margin-right:auto;
+  display: table;
+}
+
+.input-chung{
+  background-image: url("/static/contact/images/form.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.input-gt{
+  background-image: url("/static/contact/images/tuoi-gt.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
+}
+.input-tuoi{
+  background-image: url("/static/contact/images/tuoi-gt.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
+}
+.input-nd{
+  background-image: url("/static/contact/images/nd.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
+}
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+.form-control{
+  background-image: url("/static/contact/images/form.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: unset !important;
+  background-clip: unset !important;
+  border:  unset !important;
+  text-align: 1px;
+  width: 100%;
+  margin:0 auto; 
+  display: table !important;
+}
+
+.form-group{
+  margin-left:auto; 
+  margin-right:auto;
+  display: table;
+}

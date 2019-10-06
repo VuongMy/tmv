@@ -1,0 +1,58 @@
+.contact-main{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow : hidden;
+}
+
+.contact-left{
+    width: 100%;
+    position: relative;
+
+}
+.contact-right{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.right{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+.img-contact-hotline{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-80%, 30%);
+}
+.address-contact{
+    position: absolute;
+    top: 80%;
+    left: 0; 
+}
+
+.input-all{
+
+    background: url("/static/contact/images/form.png") no-repeat;
+}
+
+
+
+.main-contact{
+    background-image: url("/static/contact/images/left-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+.form-lien-he{
+    background-image: url("/static/contact/images/form-chung.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+
+}
+#contact{
+    width: 80%;
+}
