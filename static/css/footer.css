@@ -1,70 +1,97 @@
-.row {
-  margin-right: 0;
-  margin-left: 0;
+.row-footer{
+  margin-top: 30px;
+  border-top: 1px solid #000;
+  padding: 50px 0;
+}
+.row-footer .content-left img{
+  width: 80%;
+  margin-bottom: 20px;
 }
 
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-  padding: 0;
-}
-
-.header {
-  margin-bottom: 50px;
-}
-
-ul {
-  list-style-type: none;
+.row-footer .content-left p{
   margin: 0;
-  padding: 0;
-  overflow: hidden;
+  font-size: 13px;
 }
 
-li {
-  float: left;
-  background: url("../static/introduce/header/menu\ nomal.png") no-repeat;
-  margin-right: 20px;
+.row-footer .content-left .text3{
+  margin-top: 15px;
+}
+
+.row-footer .content-right{
+  padding: 50px 0;
+  text-align: right;
+}
+.row-footer .content-right li{
+  display: inline-block;
+  padding-right: 30px;
+}
+.row-footer .content-right li a{
+  color: #000;
+  font-size: 12px;
+}
+.row-footer .content-right li:last-child{
+  padding-right: 0;
+}
+.row-footer .content-right .icon{
+  margin-top: 20px;
+}
+.row-footer .content-right .icon img{
+  width: 25px;
+  margin-left: 30px;
+}
+
+
+
+/* ------------------------------------------ Responsive ----------------------------- */
+@media only screen and (max-width: 1199px) {
+  .menu li {
+    margin-right: 10px;
+  }
+  .slider-right {
+
+    margin-top: 15px;
+
 }
   
-li a {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  color: #000;
-  margin-top: 40px;
-  min-width: 150px;
 }
 
-li a:hover {
-  text-decoration: none;
-  color: #86c724;
+@media only screen and (max-width: 991px) {
+  .menu {
+    padding: 0 0px;
+  }
+  .menu li a {
+    font-size: 7px;
+    width: 79px;
+  }
 }
 
-.chose {
-  background: url("../static/introduce/header/menu\ houver.png") no-repeat;
+@media only screen and (max-width: 767px) {
+  .logo {
+    position: unset;
+    width: 100%;
+  }
+  .row-slide-left{
+    display: none;
+  }
+  .menu {
+    margin-top: 25px;
+  }
+  .menu li a {
+
+    font-size: 8px;
+    width: 90px;
+
+  }
 }
 
-.chose a{
-  color: #86c724;
+@media only screen and (max-width: 575px) {
+  
 }
 
-.menu {
-  margin: 40px 0;
-}
 
-.logo {
-  position: absolute;
-  z-index: 1;
-  left: 20%;
-  top: 40px;
-}
+/*  ----------------------------------------End Responsive ----------------------------- */
 
-.slider-left {
-  margin-top: 120px;
-  width: 82%;
-}
 
-.slider-right {
-  width: 100%;
-}
 
 /* -------------------------------------------Lien He CSS------------------------------ */
 .main-contact{

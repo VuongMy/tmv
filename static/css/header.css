@@ -1,0 +1,191 @@
+
+.row-header {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+ul { 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu li {
+  float: left;
+  background: url("../static/introduce/header/menu\ nomal.png") no-repeat;
+  margin-right: 20px;
+}
+  
+.menu li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  color: #000;
+  font-size: 9px;
+  width: 95px;
+}
+
+.menu li a img{
+  width: 80%;
+}
+
+.menu li a b{
+  margin-top: 6px;
+  width: 100%;
+  float: left;
+}
+
+.menu li a:hover {
+  text-decoration: none;
+  color: #86c724;
+}
+
+.chose {
+  background: url("../static/introduce/header/menu\ houver.png") no-repeat;
+}
+
+.chose a{
+  color: #86c724;
+}
+
+.menu {
+  padding: 0 40px;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+}
+
+.slider-left {
+  margin-top: 22%;
+  width: 90%;
+}
+
+.slider-right img{
+  width: 100%;
+}
+.slider-right{
+  margin-top: 34px;
+}
+
+
+/* ------------------------------------------ Responsive ----------------------------- */
+@media only screen and (max-width: 1199px) {
+  .menu li {
+    margin-right: 10px;
+  }
+  .slider-right {
+
+    margin-top: 15px;
+
+}
+  
+}
+
+@media only screen and (max-width: 991px) {
+  .menu {
+    padding: 0 0px;
+  }
+  .menu li a {
+    font-size: 7px;
+    width: 79px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    position: unset;
+    width: 100%;
+  }
+  .row-slide-left{
+    display: none;
+  }
+  .menu {
+    margin-top: 25px;
+  }
+  .menu li a {
+
+    font-size: 8px;
+    width: 90px;
+
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  
+}
+
+
+/*  ----------------------------------------End Responsive ----------------------------- */
+
+
+
+/* -------------------------------------------Lien He CSS------------------------------ */
+.main-contact{
+  background-image: url("/static/contact/images/left-bg.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 66.66%;
+}
+.form-lien-he{
+  background-image: url("/static/contact/images/form-chung.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 33.33%;
+}
+#contact{
+  width: 80%;
+  margin-left:auto; 
+  margin-right:auto;
+  display: table;
+}
+
+.input-chung{
+  background-image: url("/static/contact/images/form.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.input-gt{
+  background-image: url("/static/contact/images/tuoi-gt.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
+}
+.input-tuoi{
+  background-image: url("/static/contact/images/tuoi-gt.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
+}
+.input-nd{
+  background-image: url("/static/contact/images/nd.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
+}
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+.form-control{
+  background-image: url("/static/contact/images/form.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: unset !important;
+  background-clip: unset !important;
+  border:  unset !important;
+  text-align: 1px;
+  width: 100%;
+  margin:0 auto; 
+  display: table !important;
+}
+
+.form-group{
+  margin-left:auto; 
+  margin-right:auto;
+  display: table;
+}
