@@ -1,0 +1,130 @@
+/*
+ style default
+*/
+/* Main css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	padding:0 !important;
+	font-size:15px;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+.clear{
+	clear:both;
+}
+/* #Basic Styles
+================================================== */
+/* #Floats
+================================================== */
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}.clear{
+	clear:both;
+}
+.group:after {
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+    font-size: 0;
+}
+/* #Typography
+================================================== */
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1, .h1{ font-size: 60px; line-height: 1.5em; font-weight:normal;margin-bottom: 12px;  line-height:1;color:#2b2b2b;}
+	h2, .h2 { font-size: 20px; line-height: 1.25em;}
+	h3, .h3 { font-size: 16px; line-height: 1em;}
+	h4, .h4 { font-size: 14px; line-height: 0.875em;}
+	em { font-style: italic; }
+	strong, b { font-weight: bold;}
+	small { font-size: 80%; }
+/* #Links
+================================================== */
+	a, a:visited, a:active{
+	text-decoration: none; 
+	outline: 0; 
+	cursor:pointer;
+	font-weight:bold;
+}
+	a:hover{ 
+	text-decoration:underline;
+}
+	p a, p a:visited { line-height: inherit; }
+	.clear{
+		clear:both;
+	}
+	p{
+		margin: 10px 0;
+		letter-spacing: 0.3px;
+		line-height: 20px;
+		font-family: tahoma;
+		font-size: 12px;
+		color: #393939;
+	}
+	strong {
+		color: #333333;
+	}
+/* #Misc
+================================================== */	
+.no_select{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}	
+.radius_2{-webkit-border-radius: 2px; -moz-border-radius: 2px;-o-border-radius: 2px; border-radius: 2px;}
+.radius_4{-webkit-border-radius: 4px; -moz-border-radius: 4px;-o-border-radius: 4px; border-radius: 4px;}
+.radius_6{-webkit-border-radius: 6px; -moz-border-radius: 6px;-o-border-radius: 6px; border-radius: 6px;}
+.radius_8{-webkit-border-radius: 8px; -moz-border-radius: 8px;-o-border-radius: 8px; border-radius: 8px;}
+.radius_50{-webkit-border-radius: 50%; -moz-border-radius: 50%;-o-border-radius: 50%; border-radius: 50%;}
+
+
+.header {
+    margin-bottom: 10px !important;
+}
+
+.container{
+	/* width: 100% !important; */
+}
