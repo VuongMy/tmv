@@ -13,7 +13,6 @@ ul {
 
 .menu li {
   float: left;
-  background: url("../static/introduce/header/menu\ nomal.png") no-repeat;
   margin-right: 20px;
 }
   
@@ -38,14 +37,6 @@ ul {
 
 .menu li a:hover {
   text-decoration: none;
-  color: #86c724;
-}
-
-.chose {
-  background: url("../static/introduce/header/menu\ houver.png") no-repeat;
-}
-
-.chose a{
   color: #86c724;
 }
 
