@@ -5,7 +5,7 @@ import Link from 'next/link';
 class Header extends Component {
     render() {
         return (
-            <div class="header">
+            <div className="header">
                 <Head>
                     <link href="/static/css/header.css" rel="stylesheet" />
                 </Head>
@@ -32,7 +32,7 @@ class Header extends Component {
                                     <li>
                                         <Link href='/'>
                                             <a>
-                                                <img src="../static/images/header/menu nomal.png"></img>
+                                                <img src="../static/images/header/menu-nomal.png"></img>
                                                 <b>HOME</b>
                                             </a>
                                         </Link>
@@ -40,7 +40,7 @@ class Header extends Component {
                                     <li>
                                         <Link href='/gioi-thieu-benh-vien'>
                                             <a>
-                                                <img src="../static/images/header/menu nomal.png"></img>
+                                                <img src="../static/images/header/menu-nomal.png"></img>
                                                 <b>GIỚI THIỆU</b>
                                             </a>
                                         </Link>
@@ -48,7 +48,7 @@ class Header extends Component {
                                     <li>
                                         <Link href='/service'>
                                             <a>
-                                                <img src="../static/images/header/menu nomal.png"></img>
+                                                <img src="../static/images/header/menu-nomal.png"></img>
                                                 <b>DỊCH VỤ THẨM MỸ</b>
                                             </a>
                                         </Link>
@@ -56,15 +56,14 @@ class Header extends Component {
                                     <li>
                                         <Link href='/register'>
                                             <a>
-                                                <img src="../static/images/header/menu nomal.png"></img>
+                                                <img src="../static/images/header/menu-nomal.png"></img>
                                                 <b>QUY TRÌNH ĐĂNG KÝ</b>
                                             </a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href='/contact'>
-                                            <a><
-                                                img src="../static/images/header/menu nomal.png"></img>
+                                            <a><img src="../static/images/header/menu-nomal.png"></img>
                                                 <b>LIÊN HỆ</b>
                                             </a>
                                         </Link>

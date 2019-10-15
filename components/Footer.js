@@ -4,7 +4,7 @@ import Link from 'next/link';
 class Footer extends Component {
     render() {
         return (
-            <div class="footer">
+            <div className="footer">
                 <Head>
                     <link href="/static/css/footer.css" rel="stylesheet" />
                 </Head>
