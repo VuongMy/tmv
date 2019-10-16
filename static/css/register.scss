@@ -1,0 +1,161 @@
+.content-register{
+    .btn-top{
+        text-align: center;
+        display: block;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .icon{
+            width: 80px;
+        }
+        .btn{
+            width: 150px;
+        }
+    }
+    .step{
+        text-align: center;
+        margin-top: 20px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+.content-service {
+    width: 100%;
+    .title {
+        div {
+            width: max-content;
+            margin: 0 auto;
+            img {
+                width: 100px;
+            }
+            h3 {
+                font-size: 20px;
+                color: #8f7baf;
+                margin: 15px 0 10px 0;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .group-btn-dangki {
+        margin: 10px 0 10px;
+        text-align: center;
+        .btn-dangki {
+            width: 148px;
+        }
+    }
+
+    .intro_text {
+        p {
+            font-size: 16px;
+            margin: 0 0px 10px 0;
+            text-align: justify;
+        }
+    }
+
+    .tham-my-mat {
+        .logo-tham-my-mat {
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+        .bg-tham-my-mat {
+            width: 100%;
+        }
+        .content-tmm {
+            position: absolute;
+            bottom: 0;
+            .group-img-mat {
+                margin-top: 2%;
+                .img-mat {
+                    width: 90%;
+                    margin-top: 7%;
+                    border: solid 1px #ffffff;
+                    border-radius: 4px;
+                }
+            }
+            .co-gai {
+                width: 100%;
+            }
+        }
+    }
+
+    .nang-mui {
+        margin-top: 20px;
+        .logo-nang-mui {
+            width: 83.5%;
+            margin-left: 16.5%;
+        }
+        .img-mui {
+            width: 100%;
+        }
+    }
+
+    .nang-nguc {
+        margin-top: 20px;
+        .logo-nang-nguc {
+            width: 115%;
+            position: absolute;
+            right: -15%;
+        }
+        .bgr-nangnguc {
+            padding-top: 20px;
+            background-color: #e6e6e6;
+        }
+        .img-nang-nguc {
+            width: 95%;
+        }
+        .group-img-nang-nguc {
+            padding-top: 10px;
+        }
+        p {
+            margin-right: 30px;
+        }
+    }
+
+    .hut-mo {
+        margin-top: 30px;
+        .logo-hut-mo {
+            width: 83.5%;
+            position: absolute;
+        }
+        .img-hut-mo {
+            width: 98%;
+        }
+        .mau-hut-mo {
+            width: 150%;
+            position: absolute;
+            z-index: 1;
+            left: -44%;
+        }
+    }
+
+    .tam-trang {
+        margin-top: 30px;
+        .left {
+            text-align: center;
+        }
+        .logo-tam-trang {
+            width: 86.5%;
+        }
+        .img-tam-trang-co-gai {
+            width: 65%;
+        }
+        .img-tam-trang-left {
+            width: 91%;
+            position: absolute;
+            bottom: 5px;
+        }
+        .img-tam-trang-right {
+            width: 100%;
+        }
+        .intro_text {
+            margin-top: 20px;
+        }
+    }
+}
