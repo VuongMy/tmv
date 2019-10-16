@@ -182,28 +182,6 @@ class index extends Component {
                             </div>
                             <div className="col-md-2"></div>
                         </div>
-                        <div className="row content-home12">
-                            <div className="col-md-3"></div>
-                            <div className="col-md-6 content-center">
-                                <div className="line"></div>
-                                <div className="left">
-                                  
-                                        <img src="../static/images/home/iconfb.png"/>
-                                        <a link="#">
-                                        <span>FACEBOOK</span>
-                                    </a>
-                                </div>
-                                <div className="right">
-                                        <img src="../static/images/home/icontw.png"/>
-                                        <a link="#">
-                                        <span>INSTAGRAM</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-3 content-right">
-                                <img src="../static/images/home/footer scoll up.png"/>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
