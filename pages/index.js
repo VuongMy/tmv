@@ -6,11 +6,40 @@ import Footer from '../components/Footer';
 // import Introduction from '../components/home/Introduction/Introduction'
 
 class index extends Component {
+    
+    componentDidMount(){
+        var $ = require("jquery");
+      
+        // $('.slick-slider').slick({
+        //     autoplay:true,
+        //     pauseOnHover:false,
+        //     dots:false,
+        //     arrows:false,
+        //     infinite: true,
+        //     autoplaySpeed: 0,
+        //     cssEase: 'linear',
+        //     speed:10000,
+        //     slidesToShow: 4,
+        //     slidesToScroll: 1,
+        //     swipe:false,
+        //     responsive: [
+        //       {
+        //         breakpoint: 767,
+        //         settings: {
+        //           slidesToShow: 3
+        //         }
+        //       }
+        //     ]
+        //   });
+
+    }
     render() {
         return (
             <div>
                 <Head>
                     <link href="/static/css/home.css" rel="stylesheet" />
+                    {/* <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> */}
+                   
                 </Head>
 
                 <Header></Header>
@@ -42,7 +71,7 @@ class index extends Component {
                                 <div><h2>LÀ <span>NIỀM TIN </span>CỦA KHÁCH HÀNG</h2></div>
                             </div>
                         </div>
-                        <div className="row content-home3">
+                        <div className="row content-home3 slick-slider">
                             <div className="col-md-4 content-left">
                                 <img src="../static/images/home/image4.png"></img>
                             </div>
@@ -186,7 +215,7 @@ class index extends Component {
                 </div>
 
                 <Footer></Footer>
-            </div>
+             </div>
         );
     }
 }

@@ -9,10 +9,10 @@ class register extends Component {
         var $ = require("jquery");
       
         $(".step-1").slideDown(300).fadeIn(400);
-        $(".step-2").delay(4000).slideDown(300).fadeIn(400);
-        $(".step-3").delay(9000).slideDown(300).fadeIn(400);
-        $(".step-4").delay(13000).slideDown(300).fadeIn(400);
-        $(".step-5").delay(17000).slideDown(300).fadeIn(400);
+        $(".step-2").delay(2000).slideDown(300).fadeIn(400);
+        $(".step-3").delay(4000).slideDown(300).fadeIn(400);
+        $(".step-4").delay(6000).slideDown(300).fadeIn(400);
+        $(".step-5").delay(8000).slideDown(300).fadeIn(400);
 
     }
     render() {
