@@ -9,7 +9,7 @@
   width:40%;
 }
 .content-home3 img{
-  width: 100%;
+  width: 50%;
 }
 .content-home-center p{
   color: #9966CC;
@@ -48,7 +48,8 @@
 
 .content-home3{
   margin-top: 20px;
-  padding: 0 100px;
+  position: relative;
+  height: 210px;
 }
 .content-home3 .content-left{
   position: relative;
@@ -65,6 +66,40 @@
   position: absolute;
   bottom: 0;
   width: 90%;
+}
+
+
+.content-home3 .wa-l {
+  position: absolute;
+  z-index: 1;
+  background: url("https://cafe-steen.com/common/img/wa_l.png") no-repeat;
+  background-size: auto;
+  background-size: contain;
+  width: 10%;
+  height: 100%;
+  margin-left: 40%;
+}
+
+.content-home3 .wa-r {
+  z-index: 3;
+  position: absolute;
+  background: url("https://cafe-steen.com/common/img/wa_r.png") no-repeat;
+  background-size: auto;
+  background-size: contain;
+  width: 10%;
+  height: 100%;
+  margin-left: 49%;
+}
+.content-home3 .slide{
+  position: absolute;
+
+  z-index: 2;
+  
+  width: 100%;
+  
+  top: 50%;
+  
+  transform: translateY(-50%);
 }
 
 .content-home4{

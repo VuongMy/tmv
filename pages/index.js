@@ -8,38 +8,42 @@ import Footer from '../components/Footer';
 class index extends Component {
     
     componentDidMount(){
-        var $ = require("jquery");
-      
-        // $('.slick-slider').slick({
-        //     autoplay:true,
-        //     pauseOnHover:false,
-        //     dots:false,
-        //     arrows:false,
-        //     infinite: true,
-        //     autoplaySpeed: 0,
-        //     cssEase: 'linear',
-        //     speed:10000,
-        //     slidesToShow: 4,
-        //     slidesToScroll: 1,
-        //     swipe:false,
-        //     responsive: [
-        //       {
-        //         breakpoint: 767,
-        //         settings: {
-        //           slidesToShow: 3
-        //         }
-        //       }
-        //     ]
-        //   });
+        // var $ = require("jquery");
+        var $ = jQuery.noConflict();
+        $('.slick-slider').slick({
+            autoplay:true,
+            pauseOnHover:false,
+            dots:false,
+            arrows:false,
+            infinite: true,
+            autoplaySpeed: 0,
+            cssEase: 'linear',
+            speed:4000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            swipe:false,
+            responsive: [
+              {
+                breakpoint: 767,
+                settings: {
+                  slidesToShow: 3
+                }
+              }
+            ]
+          });
 
+        // $('.slick-slider').slick({ 
+
+        // });
     }
     render() {
         return (
             <div>
                 <Head>
                     <link href="/static/css/home.css" rel="stylesheet" />
-                    {/* <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> */}
-                   
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+                    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
                 </Head>
 
                 <Header></Header>
@@ -71,15 +75,28 @@ class index extends Component {
                                 <div><h2>LÀ <span>NIỀM TIN </span>CỦA KHÁCH HÀNG</h2></div>
                             </div>
                         </div>
-                        <div className="row content-home3 slick-slider">
-                            <div className="col-md-4 content-left">
-                                <img src="../static/images/home/image4.png"></img>
-                            </div>
-                            <div className="col-md-4 content-center">
-                                <img src="../static/images/home/image5.png"></img>
-                            </div>
-                            <div className="col-md-4">
-                                <img src="../static/images/home/image6.png"></img>
+                        <div className="content-home3 ">
+                            <div className="wa-l"></div>
+                            <div className="wa-r"></div>
+                            <div className="slide slick-slider">
+                                <div className="">
+                                    <img src="../static/images/home/image4.png"></img>
+                                </div>
+                                <div className="">
+                                    <img src="../static/images/home/image4.png"></img>
+                                </div>
+                                <div className="">
+                                    <img src="../static/images/home/image4.png"></img>
+                                </div>
+                                <div className="">
+                                    <img src="../static/images/home/image4.png"></img>
+                                </div>
+                                <div className="">
+                                    <img src="../static/images/home/image4.png"></img>
+                                </div>
+                                <div className="">
+                                    <img src="../static/images/home/image4.png"></img>
+                                </div>
                             </div>
                         </div>
                         <div className="row content-home4">
