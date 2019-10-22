@@ -223,7 +223,10 @@ class index extends Component {
                                 <h2>Với mong muốn mở rộng và kết nối chúng tôi muốn tìm đối tác...</h2>
                                 <p>Chúng tôi luôn chào đón các thành viên mong muốn bản thân cũng như khách hàng của mình trở nên xinh đẹp và hấp dẫn. Vậy bạn đã sẵn sàng lột xác, hãy liên hệ với chúng tôi qua đường dây nóng bên dưới để được tư vấn...?</p>
                                 <div className="layout-btn">
-                                    <img src="../static/images/home/6/hotline.png"></img>
+                                    <div>
+                                        <img src="../static/images/home/bg-phone.png"></img>
+                                        <img className="btn-hotline" src="../static/images/home/icon-phone.png"></img>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-md-2"></div>
