@@ -362,8 +362,21 @@
 }
 .content-home11 .layout-btn img{
   width: 140px;
+  position: absolute;
+  left: 40%;
 }
 
+.content-home11 .layout-btn .btn-hotline{
+  width: 46px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.7);
+  animation: won 1.25s infinite cubic-bezier(.66,0,0,1);
+}
+
+@-webkit-keyframes won{to{box-shadow:0 0 0 10px rgba(232,76,61,0)}}
+@-moz-keyframes won{to{box-shadow:0 0 0 10px rgba(232,76,61,0)}}
+@-ms-keyframes won{to{box-shadow:0 0 0 10px rgba(232,76,61,0)}}
+@keyframes won{to{box-shadow:0 0 0 10px rgba(232,76,61,0)}}
 
 
 /* ------------------------------------------ Responsive ----------------------------- */
