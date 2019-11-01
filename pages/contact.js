@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import Menu from '../components/Menu.js';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+//import '../static/css/contact.css'
 class contact extends Component {
     render() {
         return (           
             <div>
-                <Menu></Menu>
-     
+                <Header></Header>
+      
                 <table id='contact'>
                     <tbody>
                         <tr>
@@ -64,6 +66,7 @@ class contact extends Component {
                         </tr>
                     </tbody>
                 </table>
+                <Footer></Footer>
             </div>
         );
     }
