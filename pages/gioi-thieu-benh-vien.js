@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Slideshow from '../components/introduce/SlideShow';
-import Menu from '../components/Menu';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Head from 'next/head';
-import '../static/gioi-thieu-benh-vien.css'
+import '../static/css/gioi-thieu-benh-vien.css'
 const pk = [
     {src: '../static/introduce/images/pk1.png', caption:""},
     {src: '../static/introduce/images/pk2.png', caption:""},
@@ -85,7 +86,7 @@ class Introduction extends Component {
     render() {
         return (
             <div>
-                <Menu></Menu>
+                <Header></Header>
                 <div className="phong-kham">
                     <div className="slide">
                         <Slideshow
@@ -254,13 +255,14 @@ class Introduction extends Component {
                                     </div>
                                     <div className="bs" hidden={this.state.up_down_button[9].hide}>
                                         {test}
-                                    </div>
+                                    </div> 
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                     
                 </div>
+                <Footer></Footer>
             </div>
         );
 
