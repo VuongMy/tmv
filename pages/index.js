@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 // import Registry from '../components/home/Registry/Registry'
 // import Introduction from '../components/home/Introduction/Introduction'
 
+
 class index extends Component {
     
     componentDidMount(){
