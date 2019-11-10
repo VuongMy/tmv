@@ -202,15 +202,11 @@
   display: inline-block;
   width: 15%;
   margin-right: 2%;
-}
-.content-home6 .content-center li:last-child{
-  margin-right: 0;
+  margin-bottom: 20px;
 }
 .content-home6 .content-center li img{
   width: 100%;
 }
-
-
 
 .content-home7{
   margin-top: 50px;
