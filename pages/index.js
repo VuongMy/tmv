@@ -4,9 +4,43 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 // import Registry from '../components/home/Registry/Registry'
 // import Introduction from '../components/home/Introduction/Introduction'
-
+import fetch from 'isomorphic-unfetch'; 
 
 class index extends Component {
+
+    static async getInitialProps() {
+        const dataIntro = await fetch('http://13.229.107.74:8080/api/intro/get-my-intro')
+        const dataIntroJson = await dataIntro.json()
+
+        const res1 = await fetch('http://13.229.107.74:8080/api/intro/get-my-doctor')
+        const data1 = await res1.json()
+
+        const res2 = await fetch(' http://13.229.107.74:8080/api/doctor/get-doctors-team?pageNum=0&pageSize=100')
+        const data2 = await res2.json()
+       
+        const res3 = await fetch(' http://13.229.107.74:8080/api/intro/get-my-customer')
+        const data3 = await res3.json()
+
+        const res4 = await fetch(' http://13.229.107.74:8080/api/service/get-service?pageNum=0&pageSize=100')
+        const data4 = await res4.json()
+    
+        return {
+            dataIntroJson: dataIntroJson,
+            data1: data1,
+            data2: data2,
+            data3: data3,
+            data4: data4
+        }
+      }
+      componentWillMount() {
+        this.setState({
+            dataIntroJson: this.props.dataIntroJson,
+            data1: this.props.data1,
+            data2: this.props.data2,
+            data3: this.props.data3,
+            data4: this.props.data4
+        })
+      }
     
     componentDidMount(){
         // var $ = require("jquery");
@@ -31,6 +65,14 @@ class index extends Component {
                 }
               }
             ]
+          });
+
+          $('.ul1').hide();
+          $('.title-tab').click(function(){
+              var step = this.getAttribute("tab");
+              var test = '.'+step;
+              $('.ul1').hide();
+              $(test).show();
           });
 
         // $('.slick-slider').slick({ 
@@ -58,6 +100,7 @@ class index extends Component {
                                 <p>Bạn đã sẵn sàng lột xác ....?</p>
                                 <img className = "image2" src="../static/images/home/4.png"/>
                             </div>
+                            
                             <div className="col-md-4 content-home-right">
                                 <ul>
                                     <li><img src="../static/images/home/3.png"/><span> Cắt Mí</span></li>
@@ -110,12 +153,7 @@ class index extends Component {
                                 <div className="title"><img className="icon2" src="../static/images/home/icon bs.png"/><span>GIỚI THIỆU VỀ CHÚNG TÔI</span></div>
                                 <div className="intro_text">
                                     <p className="text1">"</p>
-                                    <p>Ngô Tất Tố là nhà văn hiện thực nổi tiếng giai đoạn 1930-1945.
-                                            Trong tác phẩm của ông, lần đầu tiên trong văn học Việt Nam xuất hiện hình
-                                            tượng điển hình về người phụ nữ nông dân với những phẩm chất quý báu.
-                                            Đó là nhân vật chị Dậu trong tác phẩm “ Tắt đèn”. Đặc biệt đoạn trích “ Tức nước vỡ bờ” thể hiện tập trung nhất,
-                                            rõ ràng nhất tính cách của chị Dậu. Chị Dậu là một người vợ đảm đang, hết lòng yêu thương chồng.
-                                    </p>
+                                    <p>{this.state.dataIntroJson.myIntro}</p>
                                     <p className="text2">"</p>
                                 </div>
                                 <a link="#"><img className="btn-viewmore" src="../static/images/home/xem-them.png"/></a>
@@ -138,20 +176,13 @@ class index extends Component {
                                         <h2>ĐỘI NGŨ BÁC SỸ</h2>
                                     </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                <p>{this.state.data1.myDoctor}</p>
                                 <ul>
-                                    <li><img src="../static/images/home/4/bs1.png"></img></li>
-                                    <li><img src="../static/images/home/4/bs2.png"></img></li>
-                                    <li><img src="../static/images/home/4/bs3.png"></img></li>
-                                    <li><img src="../static/images/home/4/bs4.png"></img></li>
-                                    <li><img src="../static/images/home/4/bs5.png"></img></li>
-                                    <li><img src="../static/images/home/4/bs6.png"></img></li>
-                                </ul>
-                                <ul>
-                                    <li><img src="../static/images/home/4/bs7.png"></img></li>
-                                    <li><img src="../static/images/home/4/bs8.png"></img></li>
-                                    <li><img src="../static/images/home/4/bs9.png"></img></li>
-                                    <li><img src="../static/images/home/4/bs10.png"></img></li>
+                                    {this.state.data2.content.map(item => (
+                                    
+                                        <li><img src={item.image}></img></li>
+                                    ))}
+                                
                                 </ul>
                             </div>
                             <div className="col-md-2"></div>
@@ -161,7 +192,7 @@ class index extends Component {
                             <div className="col-md-8 content-right">
                                 <img className="icon1" src="../static/images/home/image3.png"></img>
                                 <div className="title"><img className="icon2" src="../static/images/home/icon bs.png"/><span>KẾT QUẢ KHÁCH HÀNG</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                                    <p>{this.state.data3.customersService}</p>
                                 
                             </div>
                             <div className="col-md-2"></div>
@@ -169,12 +200,10 @@ class index extends Component {
                         <div className="row content-home8 content-home-tab">
                             <div className="col-md-2"></div>
                             <div className="col-md-8 content-center">
-                                <ul>
-                                    <li className="active" ><p>THẨM MỸ MẮT</p></li>
-                                    <li><p>NÂNG MŨI</p></li>
-                                    <li><p>HÚT MỠ</p></li>
-                                    <li><p>TẮM TRẮNG</p></li>
-                                    <li><p>NÂNG NGỰC</p></li>
+                                <ul >
+                                    {this.state.data4.content.map((item, key) => (
+                                        <li className="title-tab" tab={`step${key}`}><p>{item.name}</p></li>
+                                    ))}
                                 </ul>
                             </div>
                             <div className="col-md-2"></div>
@@ -182,16 +211,16 @@ class index extends Component {
                         <div className="row content-home9 content-home-content-tab">
                             <div className="col-md-2"></div>
                             <div className="col-md-8">
-                                <ul className="ul1">
-                                    <li><img src="../static/images/home/5/1.png"></img></li>
-                                    <li><img src="../static/images/home/5/2.png"></img></li>
-                                    <li><img src="../static/images/home/5/3.png"></img></li>
-                                </ul>
-                                <ul className="ul2">
-                                    <li><img src="../static/images/home/5/4.png"></img></li>
-                                    <li><img src="../static/images/home/5/5.png"></img></li>
-                                    <li><img src="../static/images/home/5/6.png"></img></li>
-                                </ul>
+
+                                {this.state.data4.content.map((item, key) => (
+                                    
+                                    <ul className={`ul1 step${key}`}>
+                                         {item.customerImage.map(item1 => (
+                                            <li><img src={item1.url}></img></li>
+                                         ))}
+                                    </ul>
+
+                                ))}
 
                                 <img className="btn-action" src="../static/images/home/5/7.png"/>
                             </div>

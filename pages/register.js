@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import '../static/css/register.scss';
 // import '../static/js/register.js';
 
-import fetch from 'isomorphic-unfetch' 
+import fetch from 'isomorphic-unfetch'; 
 
 const register = (props) => (
     <div>
@@ -29,6 +29,7 @@ register.getInitialProps = async function() {
   }
 
 class register1 extends Component {
+   
     componentDidMount(){
 
        var $ = require("jquery");
@@ -50,7 +51,6 @@ class register1 extends Component {
                 <div className="content content-register">
                     <div className="container">
 
-                    
                         <div className="btn-top">
                             <img className="icon" src="../static/images/home/image3.png"></img>
                             <img className="btn" src="../static/images/register/btn-step-register.png"></img>
