@@ -68,11 +68,22 @@ class index extends Component {
           });
 
           $('.ul1').hide();
+          $('.step0').show();
           $('.title-tab').click(function(){
               var step = this.getAttribute("tab");
+
+              var x = document.getElementsByClassName("title-tab");
+              for (var i = 0; i < x.length; i++) {
+             
+                x[i].classList.remove('active');
+              }
+
+              this.classList.add("active");
+
               var test = '.'+step;
               $('.ul1').hide();
               $(test).show();
+             
           });
 
         // $('.slick-slider').slick({ 
