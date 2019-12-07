@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Head from 'next/head';
+// import Head from 'next/head';
 import Link from 'next/link';
 // import menu from '../styles/'
 class Header extends Component {
     render() {
         return (
             <div className="header">
-                <Head>
+                {/* <Head>
                     <link href="/static/css/header.css" rel="stylesheet" />
-                </Head>
+                </Head> */}
              
                 <div className="container">
                     <div className="row row-header">

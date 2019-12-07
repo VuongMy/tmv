@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Head from 'next/head';
+// import Head from 'next/head';
 import Link from 'next/link';
 class Footer extends Component {
     render() {
         return (
             <div className="footer">
-                <Head>
+                {/* <Head>
                     <link href="/static/css/footer.css" rel="stylesheet" />
-                </Head>
+                </Head> */}
              
                 <div className="container">
                         <div className="row content-home12">

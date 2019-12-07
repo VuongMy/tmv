@@ -3,7 +3,7 @@ import Slideshow from '../components/introduce/SlideShow';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Head from 'next/head';
-import '../static/css/gioi-thieu-benh-vien.css'
+// import '../static/css/gioi-thieu-benh-vien.css'
 const pk = [
     {src: '../static/introduce/images/pk1.png', caption:""},
     {src: '../static/introduce/images/pk2.png', caption:""},
