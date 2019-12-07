@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Head from 'next/head';
+// import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '../static/css/register.scss';
+// import '../static/css/register.scss';
 // import '../static/js/register.js';
 
 import fetch from 'isomorphic-unfetch'; 
@@ -44,8 +44,6 @@ class register1 extends Component {
         
         return (
             <div>
-                <Head>
-                </Head>
                 <Header></Header>
                 
                 <div className="content content-register">

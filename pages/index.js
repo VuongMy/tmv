@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 // import Registry from '../components/home/Registry/Registry'
 // import Introduction from '../components/home/Introduction/Introduction'
 import fetch from 'isomorphic-unfetch'; 
+import Link from 'next/link';
 
 class index extends Component {
 
@@ -94,7 +95,7 @@ class index extends Component {
         return (
             <div>
                 <Head>
-                    <link href="/static/css/home.css" rel="stylesheet" />
+                    {/* <link href="/static/css/home.css" rel="stylesheet" /> */}
                     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
                     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
                     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -109,7 +110,11 @@ class index extends Component {
                             <div className="col-md-4 content-home-center">
                                 <img className="image1" src="../static/images/home/img-home-1.png"></img>
                                 <p>Bạn đã sẵn sàng lột xác ....?</p>
-                                <img className = "image2" src="../static/images/home/4.png"/>
+                                <Link href='/register'>
+                                    <a>
+                                        <img className = "image2" src="../static/images/home/4.png"/>
+                                    </a>
+                                </Link>
                             </div>
                             
                             <div className="col-md-4 content-home-right">
@@ -167,7 +172,10 @@ class index extends Component {
                                     <p>{this.state.dataIntroJson.myIntro}</p>
                                     <p className="text2">"</p>
                                 </div>
-                                <a link="#"><img className="btn-viewmore" src="../static/images/home/xem-them.png"/></a>
+                                <Link href='/gioi-thieu-benh-vien'>
+                                        
+                                    <a><img className="btn-viewmore" src="../static/images/home/xem-them.png"/></a>
+                                </Link>
                             </div>
                             <div className="col-md-2"></div>
                         </div>
@@ -233,7 +241,11 @@ class index extends Component {
 
                                 ))}
 
-                                <img className="btn-action" src="../static/images/home/5/7.png"/>
+                                <Link href='/contact'>
+                                    <a>
+                                        <img className="btn-action" src="../static/images/home/5/7.png"/>
+                                    </a>
+                                </Link>
                             </div>
                             <div className="col-md-2"></div>
                         </div>
@@ -253,7 +265,11 @@ class index extends Component {
                                     <li><img src="../static/images/home/Untitled-6.png"></img></li>
                                 </ul>
                                 <div className="layout-btn">
-                                    <img className="btn-register" src="../static/images/home/4.png"/>
+                                <Link href='/register'>
+                                    <a>
+                                        <img className="btn-register" src="../static/images/home/4.png"/>
+                                    </a>
+                                </Link>
                                 </div>
                             </div>
                             <div className="col-md-2"></div>

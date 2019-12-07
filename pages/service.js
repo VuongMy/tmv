@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '../static/css/service.scss';
+// import '../static/css/service.scss';
 class service extends Component {
     render() {
         return (
