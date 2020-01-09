@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Link from 'next/link';
 // import '../static/css/service.scss';
 class service extends Component {
     render() {
@@ -55,10 +56,14 @@ class service extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div  className="group-btn-dangki">
+                        {/* <div  className="group-btn-dangki">
                             <img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"></img>
+                        </div> */}
+                        <div  className="group-btn-dangki">
+                            <Link href='/register'>                                       
+                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"/></a>
+                            </Link>
                         </div>
-
                         <div className="row nang-mui">
                             <div className="col-md-2 col-0"></div>
                             <div className="col-md-6 col-10 row">
@@ -89,10 +94,14 @@ class service extends Component {
                                 <img className="logo-nang-mui" src="../static/images/introduce/img-service/logo-nang-mui.png"></img>
                             </div>
                         </div>
-                        <div  className="group-btn-dangki">
+                        {/* <div  className="group-btn-dangki">
                             <img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"></img>
+                        </div> */}
+                        <div  className="group-btn-dangki">
+                            <Link href='/register'>                                       
+                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"/></a>
+                            </Link>
                         </div>
-
                         <div className="row nang-nguc">
                             <div className="col-md-2 col-0 bgr-nangnguc"></div>
                             <div className="col-md-8 col-12 bgr-nangnguc content-nang-nguc">
@@ -157,10 +166,14 @@ class service extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div  className="group-btn-dangki">
+                        {/* <div  className="group-btn-dangki">
                             <img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"></img>
+                        </div> */}
+                        <div  className="group-btn-dangki">
+                            <Link href='/register'>                                       
+                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"/></a>
+                            </Link>
                         </div>
-
                         <div className="row tam-trang">
                             <div className="col-md-2 col-0"></div>
                             <div className="col-md-8 col-12 row">
@@ -173,8 +186,10 @@ class service extends Component {
                                 <div className="col-md-12 col-12 row">
                                     <div className="col-md-6 col-6 left">
                                         <img className="img-tam-trang-co-gai" src="../static/images/introduce/img-service/tam-trang-1.png"></img>
-                                        <div  className="group-btn-dangki">
-                                            <img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"></img>
+                                       <div  className="group-btn-dangki">
+                                            <Link href='/register'>                                       
+                                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"/></a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="col-md-6 col-6 row">
@@ -193,6 +208,7 @@ class service extends Component {
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
 
                     </div>

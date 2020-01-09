@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 // import Introduction from '../components/home/Introduction/Introduction'
 import fetch from 'isomorphic-unfetch'; 
 import Link from 'next/link';
+import $ from 'jquery';
 
 class index extends Component {
 
@@ -46,6 +47,7 @@ class index extends Component {
     componentDidMount(){
         // var $ = require("jquery");
         var $ = jQuery.noConflict();
+        // var slick = require('slick-carousel');
         $('.slick-slider').slick({
             autoplay:true,
             pauseOnHover:false,
@@ -159,17 +161,21 @@ class index extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="row content-home4">
-                            <div className="col-md-2"></div>
-                            <div className="col-md-3 content-center">
+                        <div className="row content-home13">
+                            <div className="col-md-3"></div>
+                            <div className="col-md-6 content-center">
                                 <img src="../static/images/home/bs.png"></img>
                             </div>
-                            <div className="col-md-5 content-right">
+                            <div className="col-md-3"></div>
+                        </div>
+                        <div className="row content-home4">
+                            <div className="col-md-3"></div>   
+                            <div className="col-md-6 content-right">
                                 <img className="icon1" src="../static/images/home/image3.png"></img>
                                 <div className="title"><img className="icon2" src="../static/images/home/icon bs.png"/><span>GIỚI THIỆU VỀ CHÚNG TÔI</span></div>
                                 <div className="intro_text">
                                     <p className="text1">"</p>
-                                    <p>{this.state.dataIntroJson.myIntro}</p>
+                                    <p>{this.props.dataIntroJson.myIntro}</p>
                                     <p className="text2">"</p>
                                 </div>
                                 <Link href='/gioi-thieu-benh-vien'>
@@ -177,7 +183,7 @@ class index extends Component {
                                     <a><img className="btn-viewmore" src="../static/images/home/xem-them.png"/></a>
                                 </Link>
                             </div>
-                            <div className="col-md-2"></div>
+                            <div className="col-md-3"></div>
                         </div>
                         <div className="row content-home5">
                             <div className="col-md-2"></div>
@@ -186,8 +192,8 @@ class index extends Component {
                             </div>
                         </div>
                         <div className="row content-home6">
-                            <div className="col-md-2"></div>
-                            <div className="col-md-8 content-center">
+                            <div className="col-md-2 col-sm-2"></div>
+                            <div className="col-md-8 col-sm-8 content-center">
                                 <div className="top">
                                     <img src="../static/images/home/5/doctor.png"></img>
                                     <div className="layout-right">
@@ -195,23 +201,23 @@ class index extends Component {
                                         <h2>ĐỘI NGŨ BÁC SỸ</h2>
                                     </div>
                                 </div>
-                                <p>{this.state.data1.myDoctor}</p>
+                                <p>{this.props.data1.myDoctor}</p>
                                 <ul>
-                                    {this.state.data2.content.map(item => (
+                                    {this.props.data2.content.map(item => (
                                     
                                         <li><img src={item.image}></img></li>
                                     ))}
                                 
                                 </ul>
                             </div>
-                            <div className="col-md-2"></div>
+                            <div className="col-md-2 col-sm-2"></div>
                         </div>
                         <div className="row content-home7">
                             <div className="col-md-2"></div>
                             <div className="col-md-8 content-right">
                                 <img className="icon1" src="../static/images/home/image3.png"></img>
                                 <div className="title"><img className="icon2" src="../static/images/home/icon bs.png"/><span>KẾT QUẢ KHÁCH HÀNG</span></div>
-                                    <p>{this.state.data3.customersService}</p>
+                                    <p>{this.props.data3.customersService}</p>
                                 
                             </div>
                             <div className="col-md-2"></div>
@@ -220,7 +226,7 @@ class index extends Component {
                             <div className="col-md-2"></div>
                             <div className="col-md-8 content-center">
                                 <ul >
-                                    {this.state.data4.content.map((item, key) => (
+                                    {this.props.data4.content.map((item, key) => (
                                         <li className="title-tab" tab={`step${key}`}><p>{item.name}</p></li>
                                     ))}
                                 </ul>
@@ -231,7 +237,7 @@ class index extends Component {
                             <div className="col-md-2"></div>
                             <div className="col-md-8">
 
-                                {this.state.data4.content.map((item, key) => (
+                                {this.props.data4.content.map((item, key) => (
                                     
                                     <ul className={`ul1 step${key}`}>
                                          {item.customerImage.map(item1 => (

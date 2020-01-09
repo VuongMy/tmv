@@ -19,3 +19,28 @@ module.exports = compose([
     }
   }
 ])
+var webpack = require("webpack");
+module.exports = {
+  webpack: (config, { dev }) => {
+      config.plugins.push(
+          new webpack.ProvidePlugin({
+              '$': 'jquery',
+              'jQuery': 'jquery',
+          })
+      )
+      return config
+  }
+}
+
+module.exports = {
+  exportTrailingSlash: true,
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' },
+      '/gioi-thieu-benh-vien': { page: '/gioi-thieu-benh-vien' },
+      '/service': { page: '/service' },
+      '/register': { page: '/register' },
+      '/contact': { page: '/contact' }
+    };
+  }
+};

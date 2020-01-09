@@ -11,8 +11,8 @@ class Footer extends Component {
              
                 <div className="container">
                         <div className="row content-home12">
-                            <div className="col-md-3"></div>
-                            <div className="col-md-6 content-center">
+                            <div className="col-md-3 col-sm-1"></div>
+                            <div className="col-md-6 col-sm-10 content-center">
                                 <div className="line"></div>
                                 <div className="left">
                                   
@@ -28,7 +28,7 @@ class Footer extends Component {
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-md-3 content-right">
+                            <div className="col-md-3 col-sm-1 content-right">
                                 <img src="../static/images/home/footer scoll up.png"/>
                             </div>
                         </div>
