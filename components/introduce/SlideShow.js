@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import classes from './slideshow.css';
+// import classes from './slideshow.css';
 
 class SlideShow extends Component {
     constructor(props) {
