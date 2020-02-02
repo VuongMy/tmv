@@ -8,6 +8,8 @@ const withImages = require('next-images')
 
 const withSass = require('@zeit/next-sass')
 
+const withProgressBar = require('nextjs-progressbar')
+
 module.exports = compose([
   [withCSS],
   [withImages],
@@ -19,6 +21,7 @@ module.exports = compose([
     }
   }
 ])
+
 var webpack = require("webpack");
 module.exports = {
   webpack: (config, { dev }) => {
@@ -38,9 +41,15 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/gioi-thieu-benh-vien': { page: '/gioi-thieu-benh-vien' },
-      '/service': { page: '/service' },
-      '/register': { page: '/register' },
-      '/contact': { page: '/contact' }
+      '/dich-vu': { page: '/dich-vu' },
+      '/qui-trinh-dang-ky': { page: '/qui-trinh-dang-ky' },
+      '/lien-he': { page: '/lien-he' }
     };
   }
 };
+module.exports = withCSS({
+  cssLoaderOptions: {
+    url: false
+  }
+})
+

@@ -46,7 +46,7 @@ class Header extends Component {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href='/service'>
+                                        <Link href='/dich-vu'>
                                             <a>
                                                 <img src="../static/images/header/menu-nomal.png"></img>
                                                 <b>DỊCH VỤ THẨM MỸ</b>
@@ -54,7 +54,7 @@ class Header extends Component {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href='/register'>
+                                        <Link href='/qui-trinh-dang-ky'>
                                             <a>
                                                 <img src="../static/images/header/menu-nomal.png"></img>
                                                 <b>QUY TRÌNH ĐĂNG KÝ</b>
@@ -62,7 +62,7 @@ class Header extends Component {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href='/contact'>
+                                        <Link href='/lien-he'>
                                             <a><img src="../static/images/header/menu-nomal.png"></img>
                                                 <b>LIÊN HỆ</b>
                                             </a>

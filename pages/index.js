@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 // import Registry from '../components/home/Registry/Registry'
 // import Introduction from '../components/home/Introduction/Introduction'
-import fetch from 'isomorphic-unfetch'; 
+import fetch from 'isomorphic-unfetch';
 import Link from 'next/link';
 import $ from 'jquery';
 
@@ -19,13 +19,13 @@ class index extends Component {
 
         const res2 = await fetch(' http://13.229.107.74:8080/api/doctor/get-doctors-team?pageNum=0&pageSize=100')
         const data2 = await res2.json()
-       
+
         const res3 = await fetch(' http://13.229.107.74:8080/api/intro/get-my-customer')
         const data3 = await res3.json()
 
         const res4 = await fetch(' http://13.229.107.74:8080/api/service/get-service?pageNum=0&pageSize=100')
         const data4 = await res4.json()
-    
+
         return {
             dataIntroJson: dataIntroJson,
             data1: data1,
@@ -33,8 +33,8 @@ class index extends Component {
             data3: data3,
             data4: data4
         }
-      }
-      componentWillMount() {
+    }
+    componentWillMount() {
         this.setState({
             dataIntroJson: this.props.dataIntroJson,
             data1: this.props.data1,
@@ -42,52 +42,52 @@ class index extends Component {
             data3: this.props.data3,
             data4: this.props.data4
         })
-      }
-    
-    componentDidMount(){
+    }
+
+    componentDidMount() {
         // var $ = require("jquery");
         var $ = jQuery.noConflict();
         // var slick = require('slick-carousel');
         $('.slick-slider').slick({
-            autoplay:true,
-            pauseOnHover:false,
-            dots:false,
-            arrows:false,
+            autoplay: true,
+            pauseOnHover: false,
+            dots: false,
+            arrows: false,
             infinite: true,
             autoplaySpeed: 0,
             cssEase: 'linear',
-            speed:4000,
+            speed: 4000,
             slidesToShow: 3,
             slidesToScroll: 1,
-            swipe:false,
+            swipe: false,
             responsive: [
-              {
-                breakpoint: 767,
-                settings: {
-                  slidesToShow: 3
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 3
+                    }
                 }
-              }
             ]
-          });
+        });
 
-          $('.ul1').hide();
-          $('.step0').show();
-          $('.title-tab').click(function(){
-              var step = this.getAttribute("tab");
+        $('.ul1').hide();
+        $('.step0').show();
+        $('.title-tab').click(function () {
+            var step = this.getAttribute("tab");
 
-              var x = document.getElementsByClassName("title-tab");
-              for (var i = 0; i < x.length; i++) {
-             
+            var x = document.getElementsByClassName("title-tab");
+            for (var i = 0; i < x.length; i++) {
+
                 x[i].classList.remove('active');
-              }
+            }
 
-              this.classList.add("active");
+            this.classList.add("active");
 
-              var test = '.'+step;
-              $('.ul1').hide();
-              $(test).show();
-             
-          });
+            var test = '.' + step;
+            $('.ul1').hide();
+            $(test).show();
+
+        });
 
         // $('.slick-slider').slick({ 
 
@@ -98,13 +98,13 @@ class index extends Component {
             <div>
                 <Head>
                     {/* <link href="/static/css/home.css" rel="stylesheet" /> */}
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css" />
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css" />
                     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
                 </Head>
 
                 <Header></Header>
-                
+
                 <div className="content content-home">
                     <div className="container">
                         <div className="row content-home1">
@@ -112,20 +112,24 @@ class index extends Component {
                             <div className="col-md-4 content-home-center">
                                 <img className="image1" src="../static/images/home/img-home-1.png"></img>
                                 <p>Bạn đã sẵn sàng lột xác ....?</p>
-                                <Link href='/register'>
+                                <Link href='/lien-he'>
                                     <a>
-                                        <img className = "image2" src="../static/images/home/4.png"/>
+                                        <img className="image2" src="../static/images/home/4.png" />
                                     </a>
                                 </Link>
                             </div>
-                            
+
                             <div className="col-md-4 content-home-right">
                                 <ul>
-                                    <li><img src="../static/images/home/3.png"/><span> Cắt Mí</span></li>
-                                    <li><img src="../static/images/home/3.png"/><span> Nâng Mũi</span></li>
-                                    <li><img src="../static/images/home/3.png"/><span> Nâng Ngực</span></li>
-                                    <li><img src="../static/images/home/3.png"/><span> Hút Mỡ</span></li>
-                                    <li><img src="../static/images/home/3.png"/><span> Tắm Trắng</span></li>
+
+                                    {this.props.data4.content.map((item, key) => (
+                                        <li><img src="../static/images/home/3.png" /><span> {item.name}</span></li>
+                                    ))}
+                                    {/* <li><img src="../static/images/home/3.png" /><span> Cắt Mí</span></li>
+                                    <li><img src="../static/images/home/3.png" /><span> Nâng Mũi</span></li>
+                                    <li><img src="../static/images/home/3.png" /><span> Nâng Ngực</span></li>
+                                    <li><img src="../static/images/home/3.png" /><span> Hút Mỡ</span></li>
+                                    <li><img src="../static/images/home/3.png" /><span> Tắm Trắng</span></li> */}
                                 </ul>
                             </div>
                         </div>
@@ -145,19 +149,19 @@ class index extends Component {
                                     <img src="../static/images/home/image4.png"></img>
                                 </div>
                                 <div className="">
-                                    <img src="../static/images/home/image4.png"></img>
+                                    <img src="../static/images/home/image5.png"></img>
+                                </div>
+                                <div className="">
+                                    <img src="../static/images/home/image6.png"></img>
                                 </div>
                                 <div className="">
                                     <img src="../static/images/home/image4.png"></img>
                                 </div>
                                 <div className="">
-                                    <img src="../static/images/home/image4.png"></img>
+                                    <img src="../static/images/home/image5.png"></img>
                                 </div>
                                 <div className="">
-                                    <img src="../static/images/home/image4.png"></img>
-                                </div>
-                                <div className="">
-                                    <img src="../static/images/home/image4.png"></img>
+                                    <img src="../static/images/home/image6.png"></img>
                                 </div>
                             </div>
                         </div>
@@ -169,18 +173,18 @@ class index extends Component {
                             <div className="col-md-3"></div>
                         </div>
                         <div className="row content-home4">
-                            <div className="col-md-3"></div>   
+                            <div className="col-md-3"></div>
                             <div className="col-md-6 content-right">
                                 <img className="icon1" src="../static/images/home/image3.png"></img>
-                                <div className="title"><img className="icon2" src="../static/images/home/icon bs.png"/><span>GIỚI THIỆU VỀ CHÚNG TÔI</span></div>
+                                <div className="title"><img className="icon2" src="../static/images/home/icon bs.png" /><span>GIỚI THIỆU VỀ CHÚNG TÔI</span></div>
                                 <div className="intro_text">
                                     <p className="text1">"</p>
                                     <p>{this.props.dataIntroJson.myIntro}</p>
                                     <p className="text2">"</p>
                                 </div>
                                 <Link href='/gioi-thieu-benh-vien'>
-                                        
-                                    <a><img className="btn-viewmore" src="../static/images/home/xem-them.png"/></a>
+
+                                    <a><img className="btn-viewmore" src="../static/images/home/xem-them.png" /></a>
                                 </Link>
                             </div>
                             <div className="col-md-3"></div>
@@ -188,7 +192,7 @@ class index extends Component {
                         <div className="row content-home5">
                             <div className="col-md-2"></div>
                             <div className="col-md-8">
-                                
+
                             </div>
                         </div>
                         <div className="row content-home6">
@@ -204,10 +208,10 @@ class index extends Component {
                                 <p>{this.props.data1.myDoctor}</p>
                                 <ul>
                                     {this.props.data2.content.map(item => (
-                                    
+
                                         <li><img src={item.image}></img></li>
                                     ))}
-                                
+
                                 </ul>
                             </div>
                             <div className="col-md-2 col-sm-2"></div>
@@ -216,9 +220,9 @@ class index extends Component {
                             <div className="col-md-2"></div>
                             <div className="col-md-8 content-right">
                                 <img className="icon1" src="../static/images/home/image3.png"></img>
-                                <div className="title"><img className="icon2" src="../static/images/home/icon bs.png"/><span>KẾT QUẢ KHÁCH HÀNG</span></div>
-                                    <p>{this.props.data3.customersService}</p>
-                                
+                                <div className="title"><img className="icon2" src="../static/images/home/icon bs.png" /><span>KẾT QUẢ KHÁCH HÀNG</span></div>
+                                <p>{this.props.data3.customersService}</p>
+
                             </div>
                             <div className="col-md-2"></div>
                         </div>
@@ -238,18 +242,18 @@ class index extends Component {
                             <div className="col-md-8">
 
                                 {this.props.data4.content.map((item, key) => (
-                                    
+
                                     <ul className={`ul1 step${key}`}>
-                                         {item.customerImage.map(item1 => (
+                                        {item.customerImage.map(item1 => (
                                             <li><img src={item1.url}></img></li>
-                                         ))}
+                                        ))}
                                     </ul>
 
                                 ))}
 
-                                <Link href='/contact'>
+                                <Link href='/lien-he'>
                                     <a>
-                                        <img className="btn-action" src="../static/images/home/5/7.png"/>
+                                        <img className="btn-action" src="../static/images/home/5/7.png" />
                                     </a>
                                 </Link>
                             </div>
@@ -271,11 +275,11 @@ class index extends Component {
                                     <li><img src="../static/images/home/Untitled-6.png"></img></li>
                                 </ul>
                                 <div className="layout-btn">
-                                <Link href='/register'>
-                                    <a>
-                                        <img className="btn-register" src="../static/images/home/4.png"/>
-                                    </a>
-                                </Link>
+                                    <Link href='/register'>
+                                        <a>
+                                            <img className="btn-register" src="../static/images/home/4.png" />
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-md-2"></div>
@@ -298,7 +302,7 @@ class index extends Component {
                 </div>
 
                 <Footer></Footer>
-             </div>
+            </div>
         );
     }
 }

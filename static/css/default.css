@@ -213,7 +213,16 @@ del {
   .left-hotline{
 	padding-bottom: 40%;
   }
-  
+  .loader {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/* background: white; */
+	background: transparent;
+	z-index: 9999;
+  }
   
 
 /* end header */

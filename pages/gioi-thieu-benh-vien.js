@@ -62,10 +62,18 @@ class Introduction extends Component {
     }
 
     static async getInitialProps() {
-        const doctors = await fetch('http://13.229.107.74:8080/api/doctor/get-doctors-team?pageNum=0&pageSize=100')
-        const doctorsJson = await doctors.json()
+        const doctors = await fetch('http://13.229.107.74:8080/api/doctor/get-doctors-team?pageNum=0&pageSize=100');
+        const doctorsJson = await doctors.json();
+
+        const pk1= await fetch('http://13.229.107.74:8080/api/intro/get-my-clinic');
+        const pkJson =  await pk1.json();
+
+        const vp1 = await fetch('http://13.229.107.74:8080/api/intro/get-my-office');
+        const vpJson =  await vp1.json();
         return {
             doctorsJson: doctorsJson,
+            pkJson: pkJson,
+            vpJson: vpJson
         }
     }
     handleClick(index) {
@@ -96,7 +104,7 @@ class Introduction extends Component {
                             <div className="col-md-1"></div>
                             <div className="col-md-6">
                                 <Slideshow
-                                    input={pk}
+                                    input={this.props.pkJson.clinicImage.map((str, index) => ({ src: str, caption: "" }))}
                                     ratio={`626:371`}
                                     mode={`manual`}
                                 />
@@ -104,19 +112,17 @@ class Introduction extends Component {
                             <div className="col-md-1"></div>
                             <div className="col-md-4">
                                 <h2>Phong Kham</h2>
-                                <p>Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,
-                                </p>
+                                <p>{this.props.pkJson.clinic}</p>
                             </div>
                         </div>
                         <div className="row content-vanphong">
                             <div className="col-md-5">
                                 <h2>Van phong cua chung toi</h2>
-                                <p>Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,Make music,
-                                </p>
+                                <p>{this.props.vpJson.myOffice}</p>
                             </div>
                             <div className="col-md-6">
                                 <Slideshow
-                                    input={vp}
+                                    input={this.props.vpJson.myOfficeImage.map((str, index) => ({ src: str, caption: "" }))}
                                     ratio={`632:432`}
                                     mode={`automatic`}
                                 />

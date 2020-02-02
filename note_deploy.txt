@@ -1,0 +1,15 @@
+https://nextjs.org/docs/deployment
+
+
+Next.js can be deployed to any hosting provider that supports Node.js. In order to self-host there are two commands: next build and next start.
+
+next build builds the production application in the .next folder.
+
+next start starts a Node.js server that supports hybrid pages, serving both statically generated and server-side rendered pages.
+
+Generally you'll have to follow these steps to deploy to production:
+
+Run npm install
+Run npm run build (runs next build)
+Potentially copy the .next, node_modules, and package.json to your server.
+Run npm run start (runs next start) on the server

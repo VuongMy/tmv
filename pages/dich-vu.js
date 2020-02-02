@@ -59,9 +59,9 @@ class service extends Component {
                         {/* <div  className="group-btn-dangki">
                             <img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"></img>
                         </div> */}
-                        <div  className="group-btn-dangki">
-                            <Link href='/register'>                                       
-                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"/></a>
+                        <div className="group-btn-dangki">
+                            <Link href='/lien-he'>
+                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png" /></a>
                             </Link>
                         </div>
                         <div className="row nang-mui">
@@ -97,9 +97,9 @@ class service extends Component {
                         {/* <div  className="group-btn-dangki">
                             <img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"></img>
                         </div> */}
-                        <div  className="group-btn-dangki">
-                            <Link href='/register'>                                       
-                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"/></a>
+                        <div className="group-btn-dangki">
+                            <Link href='/lien-he'>
+                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png" /></a>
                             </Link>
                         </div>
                         <div className="row nang-nguc">
@@ -127,12 +127,14 @@ class service extends Component {
                                         <img className="img-nang-nguc" src="../static/images/introduce/img-service/nang-nguc-3.png"></img>
                                     </div>
                                 </div>
-                                <div  className="group-btn-dangki">
-                                    <img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"></img>
+                                <div className="group-btn-dangki">
+                                    <Link href='/lien-he'>
+                                        <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png" /></a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="row hut-mo">
                             <div className="col-md-2 col-0"></div>
                             <div className="col-md-8 col-12 row">
@@ -148,7 +150,7 @@ class service extends Component {
                                     </div>
                                 </div>
                                 <div className="col-md-3 col-3">
-                                <img className="mau-hut-mo" src="../static/images/introduce/img-service/mau-hut-mo.png"></img>
+                                    <img className="mau-hut-mo" src="../static/images/introduce/img-service/mau-hut-mo.png"></img>
                                 </div>
                                 <div className="col-md-9 col-9 row">
                                     <div className="col-md-6 col-6">
@@ -169,9 +171,9 @@ class service extends Component {
                         {/* <div  className="group-btn-dangki">
                             <img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"></img>
                         </div> */}
-                        <div  className="group-btn-dangki">
-                            <Link href='/register'>                                       
-                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"/></a>
+                        <div className="group-btn-dangki">
+                            <Link href='/lien-he'>
+                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png" /></a>
                             </Link>
                         </div>
                         <div className="row tam-trang">
@@ -186,9 +188,9 @@ class service extends Component {
                                 <div className="col-md-12 col-12 row">
                                     <div className="col-md-6 col-6 left">
                                         <img className="img-tam-trang-co-gai" src="../static/images/introduce/img-service/tam-trang-1.png"></img>
-                                       <div  className="group-btn-dangki">
-                                            <Link href='/register'>                                       
-                                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png"/></a>
+                                        <div className="group-btn-dangki">
+                                            <Link href='/lien-he'>
+                                                <a><img className="btn-dangki" src="../static/images/introduce/img-service/btn-dang-ki-ngay.png" /></a>
                                             </Link>
                                         </div>
                                     </div>
@@ -208,7 +210,7 @@ class service extends Component {
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
 
                     </div>
