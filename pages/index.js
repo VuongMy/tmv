@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import fetch from 'isomorphic-unfetch';
 import Link from 'next/link';
 import $ from 'jquery';
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 class index extends Component {
 
@@ -179,7 +180,7 @@ class index extends Component {
                                 <div className="title"><img className="icon2" src="../static/images/home/icon bs.png" /><span>GIỚI THIỆU VỀ CHÚNG TÔI</span></div>
                                 <div className="intro_text">
                                     <p className="text1">"</p>
-                                    <p>{this.props.dataIntroJson.myIntro}</p>
+                                    <p>{ ReactHtmlParser(`${this.props.dataIntroJson.myIntro}`) }</p>
                                     <p className="text2">"</p>
                                 </div>
                                 <Link href='/gioi-thieu-benh-vien'>
@@ -205,7 +206,7 @@ class index extends Component {
                                         <h2>ĐỘI NGŨ BÁC SỸ</h2>
                                     </div>
                                 </div>
-                                <p>{this.props.data1.myDoctor}</p>
+                                <p>{ ReactHtmlParser(`${this.props.data1.myDoctor}`) }</p>
                                 <ul>
                                     {this.props.data2.content.map(item => (
 
@@ -221,8 +222,7 @@ class index extends Component {
                             <div className="col-md-8 content-right">
                                 <img className="icon1" src="../static/images/home/image3.png"></img>
                                 <div className="title"><img className="icon2" src="../static/images/home/icon bs.png" /><span>KẾT QUẢ KHÁCH HÀNG</span></div>
-                                <p>{this.props.data3.customersService}</p>
-
+                                <p>{ ReactHtmlParser(`${this.props.data3.customersService}`) }</p>
                             </div>
                             <div className="col-md-2"></div>
                         </div>
@@ -265,12 +265,9 @@ class index extends Component {
                                 <img src="../static/images/home/Untitled-2.png"></img>
                             </div>
                             <div className="col-md-5 content-right">
-                                <p>Nếu bạn nghiêm túc thật sự muốn thay đổi, muốn trở nên
-xinh đẹp, muốn trở thành một nghệ sĩ giải trí hoặc muốn được tái sinh, lột xác hãy liên hệ
-với chúng tôi.</p>
-                                <h2>
-                                </h2>
-                                <p className="text2" ></p>
+                                <p>Chúng tôi muốn tìm đối tác để làm mẫu quảng cáo với các dịch vụ hoàn toàn miễn phí dành cho bạn:</p>
+                                <h2>Bạn đã sẵn sàng</h2>
+                                <p className="text2" >muốn lột xác giống như họ...?</p>
                                 <ul>
                                     <li><img src="../static/images/home/Untitled-3.png"></img></li>
                                     <li><img src="../static/images/home/Untitled-4.png"></img></li>
@@ -291,7 +288,7 @@ với chúng tôi.</p>
                             <div className="col-md-2"></div>
                             <div className="col-md-8">
                                 <h2>Với mong muốn mở rộng và kết nối chúng tôi muốn tìm đối tác...</h2>
-                                <p>Chúng tôi luôn chào đón các thành viên mong muốn bản thân cũng như khách hàng của mình trở nên xinh đẹp và hấp dẫn. Vậy bạn đã sẵn sàng lột xác, hãy liên hệ với chúng tôi qua đường dây nóng bên dưới để được tư vấn...?</p>
+                                <p>Nếu bạn nghiêm túc thật sự muốn thay đổi, muốn trở nên xinh đẹp, muốn trở thành một nghệ sĩ giải trí hoặc muốn được tái sinh, lột xác vui lòng thảo luận liên hệ với chúng tôi một lần</p>
                                 <div className="layout-btn">
                                     <div>
                                         <img src="../static/images/home/bg-phone.png"></img>

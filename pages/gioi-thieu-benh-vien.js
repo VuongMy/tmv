@@ -3,7 +3,9 @@ import Slideshow from '../components/introduce/SlideShow';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import fetch from 'isomorphic-unfetch'; 
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 // import '../static/css/gioi-thieu-benh-vien.css'
+const html = '<div>Example HTML string</div>';
 const pk = [
     { src: '../static/images/introduce/images/pk1.png', caption: "" },
     { src: '../static/images/introduce/images/pk2.png', caption: "" },
@@ -112,13 +114,14 @@ class Introduction extends Component {
                             <div className="col-md-1"></div>
                             <div className="col-md-4">
                                 <h2>Phong Kham</h2>
-                                <p>{this.props.pkJson.clinic}</p>
+                                <p>{ ReactHtmlParser(`${this.props.pkJson.clinic}`) }</p>
                             </div>
                         </div>
                         <div className="row content-vanphong">
                             <div className="col-md-5">
                                 <h2>Van phong cua chung toi</h2>
-                                <p>{this.props.vpJson.myOffice}</p>
+                                <p>{ ReactHtmlParser(`${this.props.vpJson.myOffice}`) }</p>
+                                {/* <p>{this.props.vpJson.myOffice}</p> */}
                             </div>
                             <div className="col-md-6">
                                 <Slideshow
