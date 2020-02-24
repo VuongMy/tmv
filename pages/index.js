@@ -265,9 +265,12 @@ class index extends Component {
                                 <img src="../static/images/home/Untitled-2.png"></img>
                             </div>
                             <div className="col-md-5 content-right">
-                                <p>Chúng tôi muốn tìm đối tác để làm mẫu quảng cáo với các dịch vụ hoàn toàn miễn phí dành cho bạn:</p>
-                                <h2>Bạn đã sẵn sàng</h2>
-                                <p className="text2" >muốn lột xác giống như họ...?</p>
+                                <p>Nếu bạn nghiêm túc thật sự muốn thay đổi, muốn trở nên
+xinh đẹp, muốn trở thành một nghệ sĩ giải trí hoặc muốn được tái sinh, lột xác hãy liên hệ
+với chúng tôi.</p>
+                                <h2>
+                                </h2>
+                                <p className="text2" ></p>
                                 <ul>
                                     <li><img src="../static/images/home/Untitled-3.png"></img></li>
                                     <li><img src="../static/images/home/Untitled-4.png"></img></li>

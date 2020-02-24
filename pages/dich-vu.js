@@ -26,9 +26,16 @@ class service extends Component {
                                     <div className="col-md-1 col-1"></div>
                                     <div className="col-md-7 col-9">
                                         <div className="intro_text">
-                                            <p>Ngô Tất Tố là nhà văn hiện thực nổi tiếng giai đoạn 1930-1945.
-                                                    Trong tác phẩm của ông, lần đầu tiên trong văn học Việt Nam xuất hiện hình
-                                                    tượng điển hình về người phụ nữ nông dân với những phẩm chất quý báu. Đó là nhân vật chị Dậu trong tác phẩm “ Tắt đèn”.
+                                            <p>
+                                            Phương pháp cắt mổ là một cách phẫu thuật trong đó da mí mắt trên được
+rạch dọc theo đường mắt hai mí mong muốn để tạo ra một đôi mắt đẹp, rõ ràng,
+duy trì được hai mí lâu dài.
+Tạo một vết mổ dọc theo đường mắt hai mí mong muốn để loại bỏ da và mỡ thừa
+và khâu vết thương để tạo ra một đôi mắt hai mí.
+Ngay cả với mắt bị chảy xệ và sưng sẽ được sắp xếp tạo ra một đôi mắt hai mí to
+rõ ràng.
+Với phẫu thuật an toàn và khâu vết thương cẩn thận đảm bảo rằng vết thương
+không bị lộ, tạo ra một đôi mắt hai mí đẹp tự nhiên.
                                             </p>
                                         </div>
                                     </div>
@@ -69,9 +76,17 @@ class service extends Component {
                             <div className="col-md-6 col-10 row">
                                 <div className="col-md-12 rol-12">
                                     <div className="intro_text">
-                                        <p>Ngô Tất Tố là nhà văn hiện thực nổi tiếng giai đoạn 1930-1945.
-                                                Trong tác phẩm của ông, lần đầu tiên trong văn học Việt Nam xuất hiện hình
-                                                tượng điển hình về người phụ nữ nông dân với những phẩm chất quý báu. Đó là nhân vật chị Dậu trong tác phẩm “ Tắt đèn”.
+                                        <p>
+                                        Cắt ra một phần độ rộng của lỗ mũi lớn để làm cho nó nhỏ hơn. Với trường
+hợp kích thước của lỗ mũi và toàn bộ mũi trông lớn được giảm bằng cách làm
+cho lỗ mũi nhỏ hơn, tạo ấn tượng cho toàn bộ khuôn mặt sắc nét.
+Nâng mũi là một thủ thuật trong đó một bộ phận giả bằng silicon, Gore-Tex hoặc
+sụn tự thân được đưa vào cơ mũi để nâng cao cơ mũi.
+Tạo cho toàn bộ khuôn mặt trông sắc nét và nhỏ, và khuôn mặt đẹp.
+Sụn giả sẽ được đặt thiết kế riêng với điều chỉnh chiều cao và chiều rộng phù hợp
+với mong muốn của bệnh nhân.
+Nếu cơ thể bạn dị ứng, kháng lại với vật liệu nhân tạo, thì có thể sử dụng mô sụn
+của bạn để làm.
                                         </p>
                                     </div>
                                 </div>
@@ -107,9 +122,12 @@ class service extends Component {
                             <div className="col-md-8 col-12 bgr-nangnguc content-nang-nguc">
                                 <div className="row">
                                     <div className="col-md-9 col-9 intro_text">
-                                        <p>Ngô Tất Tố là nhà văn hiện thực nổi tiếng giai đoạn 1930-1945.
-                                                Trong tác phẩm của ông, lần đầu tiên trong văn học Việt Nam xuất hiện hình
-                                                tượng điển hình về người phụ nữ nông dân với những phẩm chất quý báu. Đó là nhân vật chị Dậu trong tác phẩm “ Tắt đèn”.
+                                        <p>
+                                        Đây là một hoạt động đưa túi silicon vào để tăng kích thước và tạo cảm
+giác đầy đặn.
+Tại Verite Clinic, phẫu thuật được ưu tiên thực hiện với phương pháp chuyển đổi
+lớp. Với túi Silicon đảm bảo và với kĩ thuật uy tín của bác sĩ ngực sẽ trông đẹp
+hơn và cảm giác khi sờ chạm vào cũng thấy mềm mại tự nhiên hơn.
                                         </p>
                                     </div>
                                     <div className="col-md-3 col-3">
@@ -143,9 +161,16 @@ class service extends Component {
                                 </div>
                                 <div className="col-md-9 col-9">
                                     <div className="intro_text">
-                                        <p>Ngô Tất Tố là nhà văn hiện thực nổi tiếng giai đoạn 1930-1945.
-                                                Trong tác phẩm của ông, lần đầu tiên trong văn học Việt Nam xuất hiện hình
-                                                tượng điển hình về người phụ nữ nông dân với những phẩm chất quý báu. Đó là nhân vật chị Dậu trong tác phẩm “ Tắt đèn”.
+                                        <p>
+                                        Ngoài việc hút mỡ thông thường, cách sử dụng sóng siêu âm đặc biệt chỉ
+ảnh hưởng đến các tế bào mỡ gọi là sóng Bayer, sau đó bằng kĩ thuật hút trực
+tiếp các tế bào mỡ thông qua ống thông mỏng đặc biệt với mục tiêu sẽ làm cho
+cơ thể gầy hơn.
+So với hút mỡ thông thường, nó được loại bỏ khoảng 90% lượng mỡ, ít gây hại
+cho cơ thể và thời gian ngừng hoạt động sau phẫu thuật ít là điểm đặc trưng của
+phương pháp này.
+Phương pháp này hướng đến mục tiêu không tăng cân trở lại, tạo cho một cơ thể
+vóc dáng sắc nét
                                         </p>
                                     </div>
                                 </div>
@@ -202,9 +227,16 @@ class service extends Component {
                                             <img className="img-tam-trang-right" src="../static/images/introduce/img-service/tam-trang-4.png"></img>
                                         </div>
                                         <div className="col-md-12 col-12 intro_text">
-                                            <p>Ngô Tất Tố là nhà văn hiện thực nổi tiếng giai đoạn 1930-1945.
-                                                    Trong tác phẩm của ông, lần đầu tiên trong văn học Việt Nam xuất hiện hình
-                                                    tượng điển hình về người phụ nữ nông dân với những phẩm chất quý báu. Đó là nhân vật chị Dậu trong tác phẩm “ Tắt đèn”.
+                                            <p>
+                                            Năng lượng ánh sáng phản ứng trực tiếp và sắc tố melanin làm
+phá hỏng các vấn đề về da như sẫm màu, đỏ. Sự hỗ trợ của bước sóng tần số
+cao, năng lượng ánh sáng. Loại bỏ các đốm đen trên toàn bộ da, loại bỏ nám và
+làm hồi sinh lại làn da trong suốt, trắng đẹp.
+(Điểm khác biệt so với trước)
+So với RF từ trước, bằng cách mở rộng bước sóng của ánh sáng và giảm độ rộng
+của ánh sáng, nó có hiệu quả để điều trị các điểm nám chân sâu, nám không thể
+
+xóa hoặc các điểm nám mỏng và khó phản ứng.
                                             </p>
                                         </div>
                                     </div>
