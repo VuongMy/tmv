@@ -7,27 +7,6 @@ import Footer from '../components/Footer';
 
 import fetch from 'isomorphic-unfetch'; 
 
-const register = (props) => (
-    <div>
-        <h1>Batman TV Shows</h1>
-        {/* {props.shows.map(({show}) => ( */}
-           
-             <h1>{props.shows.size}</h1>
-            
-        // ))}
-    </div>
-)
-register.getInitialProps = async function() {
-    const res = await fetch('http://13.229.107.74:8080/api/doctor/get-doctors-team?pageNum=0&pageSize=10')
-    const data = await res.json()
-  
-    console.log(`Show data fetched. Count: ${data.length}`)
-  
-    return {
-      shows: data
-    }
-  }
-
 class register1 extends Component {
    
     componentDidMount(){
