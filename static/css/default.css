@@ -370,9 +370,11 @@ del {
 	}
 	.content-register .step1 > div{
 		float:right;
+		text-align: left;
 	}
 	.content-register .step2 > div{
 		float:left;
+		text-align: left;
 	}
 
 	.content-register .step1 .number span{
