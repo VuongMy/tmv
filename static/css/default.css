@@ -331,7 +331,6 @@ del {
 	}
     .content-register .step{
         text-align: center;
-        margin-top: 20px;
         
 	}
 	.content-register .step img{
@@ -358,7 +357,7 @@ del {
 		width:100%;
 		position: relative;
 		float:left;
-		margin-bottom:50px;
+		min-height: 241px;
 	}
 	.content-register .space-fix{
 		width:40%;
@@ -472,6 +471,7 @@ del {
 		width: 40%;
 		float: left;
 		border-radius: 10px;
+		min-height: 165px;
 	}
 	.content-register .step2 .content{
 		border: 3px solid #8f7aae;
@@ -480,6 +480,7 @@ del {
 		width: 40%;
 		float: left;
 		border-radius: 10px;
+		min-height: 165px;
 	}
 
 
@@ -1348,6 +1349,13 @@ del {
 	.content-home13 {
 		margin-top: 30px;
 	}
+
+	.content-register .step1 .number span::before {
+		width: 46px;
+	}
+	.content-register .step2 .number span::before {
+		width: 46px;
+	}
   }
   
   @media only screen and (max-width: 991px) {
@@ -1373,6 +1381,26 @@ del {
 	}
 	.content-home4 {
 		margin-top: -96px;
+	}
+
+	.content-register .step1 .number span {
+		width: 90px;
+		height: 90px;
+		line-height: 66px;
+		font-size: 36px;
+	}
+	.content-register .step2 .number span {
+		width: 90px;
+		height: 90px;
+		line-height: 66px;
+		font-size: 36px;
+	}
+
+	.content-register .step1 .number span::before {
+		width: 34px;
+	}
+	.content-register .step2 .number span::before {
+		width: 34px;
 	}
   }
 
@@ -1415,6 +1443,22 @@ del {
 		padding: 0 20px;
 	}
 
+
+	.content-register .space-fix {
+		width: 0%;
+	}
+	.content-register .step1 .content {
+		width: 77%;
+	}
+
+	.content-register .step2 .content {
+		margin-left: 18px;
+		width: 75%;
+	}
+	.content-register .step {
+		min-height: 210px;
+		margin-top: 20px;
+	}
   }
 
   @media only screen and (max-width: 575px) {
@@ -1452,6 +1496,32 @@ del {
 	}
 	
 
+	.content-register .step1 .number span {
+		width: 65px;
+		height: 65px;
+		line-height: 50px;
+		font-size: 30px;
+		border: 5px solid #84ce01;
+	}
+	.content-register .step2 .number span {
+		width: 65px;
+		height: 65px;
+		line-height: 50px;
+		font-size: 30px;
+		border: 5px solid #8f7aae;
+	}
+	.content-register .step1 .number span::before {
+		width: 0px;
+	}
+	.content-register .step2 .number span::before {
+		width: 0px;
+	}
+	.content-register .step1 .content {
+		width: 72%;
+	}
+	.content-register .step2 .content {
+		width: 72%;
+	}
   }
   
 
