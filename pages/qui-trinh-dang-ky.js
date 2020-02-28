@@ -45,8 +45,18 @@ class register1 extends Component {
             'bbbbbbb'
         ]
 
+        const newArr=[]
+        for (let index = 0; index < dataTest.length; index++) {
+            const element = dataTest[index];
+            newArr[index]={
+                'class':' <div class="step step2">',
+                'content':element
+            }
+        }
+
         return {
-            data4: data4
+            data4: data4,
+            data:newArr
         }
     }
    
@@ -58,6 +68,15 @@ class register1 extends Component {
     //     $(".step-3").delay(4000).slideDown(300).fadeIn(400);
     //     $(".step-4").delay(6000).slideDown(300).fadeIn(400);
     //     $(".step-5").delay(8000).slideDown(300).fadeIn(400);
+
+            // $( ".ninh" ).each(function( index ) {
+            //     console.log( index + ": " + $( this ).text() );
+            //     if(index%2 == 0){
+            //         $( this ).addClass("step").addClass("step1");
+            //     }else{
+            //         $( this ).addClass("step").addClass("step2");
+            //     }
+            //   });
 
     }
     render() {
@@ -75,26 +94,26 @@ class register1 extends Component {
                         </div>
 
                         
-                            {/* <p>{this.props.data4.length}</p>
+                        {/* <p  >{this.props.data4.length}
+                        {ReactHtmlParser(`${this.props.data.length}`)}
+                        </p> */}
 
-                       {
+                    
+                       {/* {
                            this.props.data4.map(item => (
                            <p>{item}</p>
                         ))
-                       } */}
- 
-                        {
-                            
-                        }
+                       }  */}
+                       
 
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              
                                 <div class="step step1">
                                     <div class="space-fix"></div>
                                     <div class="number"><span>1</span></div>
                                     <div class="content">
                                     {ReactHtmlParser(`${dataTest[0]}`)}
-                                        {/* Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. */}
                                     </div>
                                 </div>
                                 <div class="step step2">
@@ -102,7 +121,6 @@ class register1 extends Component {
                                     <div class="number"><span>2</span></div>
                                     <div class="content">
                                     {ReactHtmlParser(`${dataTest[1]}`)}
-                                        {/* Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. */}
                                     </div>
                                 </div>
                                 <div class="step step1">
@@ -119,7 +137,7 @@ class register1 extends Component {
                                     {ReactHtmlParser(`${dataTest[3]}`)}
                                     </div>
                                 </div>
-                                <div class="step step1">
+                                <div class="step step1 final-step">
                                     <div class="space-fix"></div>
                                     <div class="number"><span>5</span></div>
                                     <div class="content">

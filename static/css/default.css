@@ -483,6 +483,9 @@ del {
 		min-height: 165px;
 	}
 
+	.content-register .final-step .number span::after{
+		height: 0px;
+	}
 
 
 /*--------------------- end register ---------------------- */
